@@ -1,0 +1,26 @@
+@import "styles/variables";
+
+.flex-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  border-bottom: 1px solid grey;
+  height: #{$headFootHeight};
+}
+
+.footer {
+  border-top: #{$headFootBordColor};
+  height: #{$headFootHeight};
+}
+
+.header, .footer {
+  flex-shrink: 0;
+}
+
+.content {
+  flex-grow: 1;
+  overflow-y: auto;
+}
