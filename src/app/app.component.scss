@@ -1,6 +1,6 @@
 @import "styles/variables";
 
-.flex-wrapper {
+.app {
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -9,15 +9,52 @@
 .header {
   border-bottom: 1px solid grey;
   height: #{$headFootHeight};
+  flex-shrink: 0;
+
+  &__content-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  &__logo {
+    font-family: "PT Mono", monospace;
+    font-size: 1.7rem;
+  }
+
+  &__title {
+    font-size: 2.5rem;
+    font-weight: 400;
+  }
 }
 
 .footer {
-  border-top: #{$headFootBordColor};
+  border-top: #{$headFootBorder};
   height: #{$headFootHeight};
-}
-
-.header, .footer {
   flex-shrink: 0;
+
+  &__content-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  &__logo {
+    font-family: "PT Mono", monospace;
+    font-size: 1.5rem;
+  }
+
+  &__tagline {
+    width: 30%;
+    font-size: 0.9rem;
+    line-height: 0.8rem;
+  }
 }
 
 .content {
