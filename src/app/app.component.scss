@@ -1,4 +1,5 @@
 @import "styles/variables";
+@import "styles/mixins";
 
 .app {
   display: flex;
@@ -16,8 +17,7 @@
     align-items: center;
     justify-content: space-between;
     height: 100%;
-    padding-left: 10%;
-    padding-right: 10%;
+    @include leftRightPaddings;
   }
 
   &__logo {
@@ -31,6 +31,11 @@
   }
 }
 
+.content {
+  display: inline-block;
+  @include leftRightPaddings;
+}
+
 .footer {
   border-top: #{$headFootBorder};
   height: #{$headFootHeight};
@@ -41,8 +46,7 @@
     flex-direction: column;
     justify-content: center;
     height: 100%;
-    padding-left: 10%;
-    padding-right: 10%;
+    @include leftRightPaddings;
   }
 
   &__logo {
