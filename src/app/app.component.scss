@@ -9,7 +9,7 @@
 
 .header {
   border-bottom: 1px solid grey;
-  height: #{$headFootHeight};
+  height: $headFootHeight;
   flex-shrink: 0;
 
   &__content-wrap {
@@ -21,7 +21,7 @@
   }
 
   &__logo {
-    font-family: "PT Mono", monospace;
+    font-family: $logoFonts;
     font-size: 1.7rem;
   }
 
@@ -37,8 +37,8 @@
 }
 
 .footer {
-  border-top: #{$headFootBorder};
-  height: #{$headFootHeight};
+  border-top: $headFootBorder;
+  height: $headFootHeight;
   flex-shrink: 0;
 
   &__content-wrap {
@@ -50,7 +50,7 @@
   }
 
   &__logo {
-    font-family: "PT Mono", monospace;
+    font-family: $logoFonts;
     font-size: 1.5rem;
     line-height: 1.3rem;
   }
