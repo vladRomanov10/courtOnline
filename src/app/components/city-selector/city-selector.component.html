@@ -2,7 +2,10 @@
     <h1 class="header">КортОнлайн</h1>
     <div class="city-dropdown city-dropdown_margin">
         <p class="city-dropdown__tittle">Выберите ваш город:</p>
-        ДропЛист<br>
-        <button>Подтвердить</button>
+        <mat-form-field appearance="fill">
+            <mat-label class="city-dropdown__label">Город</mat-label>
+            <mat-select [(ngModel)]="selectedCity.name"></mat-select>
+            <button>Подтвердить</button>
+        </mat-form-field>
     </div>
 </div>
