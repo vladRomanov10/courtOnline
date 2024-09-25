@@ -4,7 +4,7 @@ import {RouterLink} from "@angular/router";
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatSelectModule } from "@angular/material/select";
 import { FormsModule } from "@angular/forms";
-// import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+
 
 import { City } from "../../types/interfaces/city.interface";
 
@@ -16,8 +16,9 @@ import { City } from "../../types/interfaces/city.interface";
   styleUrl: './city-selector.component.scss'
 })
 export class CitySelectorComponent {
-  private readonly cities: City[] = [{id: 1, name: 'Astana'}, {id: 2, name: 'Almaty'}]
+  readonly cities: City[] = [{id: 1, name: 'Астана'}, {id: 2, name: 'Алматы'}]
+  private readonly defaultCity: City = {id: 2, name: 'Алматы'}
 
-  public selectedCity: City = this.cities[1]
+  public selectedCityName: string = this.defaultCity.name
 
 }

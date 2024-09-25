@@ -4,8 +4,14 @@
         <p class="city-dropdown__tittle">Выберите ваш город:</p>
         <mat-form-field appearance="fill">
             <mat-label class="city-dropdown__label">Город</mat-label>
-            <mat-select [(ngModel)]="selectedCity.name"></mat-select>
-            <button>Подтвердить</button>
+            <mat-select [(ngModel)]="selectedCityName">
+                @for (city of cities; track city.id) {
+                    <mat-option [value]="city.name">
+                        {{city.name}}
+                    </mat-option>
+                }
+            </mat-select>
         </mat-form-field>
+        <button>Подтвердить</button>
     </div>
 </div>
