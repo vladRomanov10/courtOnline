@@ -1,16 +1,17 @@
 @import "../../styles/variables";
 
-.flex-wrapper {
+.flex-wrapper-primary {
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .header {
   font-family: $logoFonts;
-  margin: 20% auto 5%;
-  text-align: center;
+  //text-align: center;
 }
 
 .city-dropdown {
@@ -41,8 +42,4 @@
   &__city-option {
 
   }
-}
-
-.city-dropdown_margin {
-  margin: 0 auto;
 }
