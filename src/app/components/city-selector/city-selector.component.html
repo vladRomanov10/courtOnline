@@ -1,18 +1,16 @@
 <div class="flex-wrapper-primary">
     <h1 class="header">КортОнлайн</h1>
     <div class="city-dropdown city-dropdown_margin">
-        <div class="city-dropdown__flex-wrapper-primary">
-            <p class="city-dropdown__tittle">Выберите ваш город:</p>
-            <mat-form-field class="city-dropdown__select-form" appearance="fill">
-                <mat-select class="city-dropdown__selected-city" [(ngModel)]="selectedCityName">
-                    @for (city of cities; track city.id) {
-                        <mat-option class="city-dropdown__city-option" [value]="city.name">
-                            {{city.name}}
-                        </mat-option>
-                    }
-                </mat-select>
-            </mat-form-field>
-            <button class="city-dropdown__select-button" (click)="confirmSelection()">Подтвердить</button>
-        </div>
+        <p class="city-dropdown__tittle">Выберите ваш город:</p>
+        <mat-form-field class="city-dropdown__select-form" appearance="fill">
+            <mat-select class="city-dropdown__selected-city" [(ngModel)]="selectedCityName">
+                @for (city of cities; track city.id) {
+                    <mat-option class="city-dropdown__city-option" [value]="city.name">
+                        {{city.name}}
+                    </mat-option>
+                }
+            </mat-select>
+        </mat-form-field>
+        <button class="city-dropdown__select-button" (click)="confirmSelection()">Подтвердить</button>
     </div>
 </div>

@@ -11,20 +11,18 @@
 
 .header {
   font-family: $logoFonts;
-  //text-align: center;
+  margin-bottom: 3%;
 }
 
 .city-dropdown {
-  width: 50%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 512px;
   padding: 3%;
   background-color: #D3D3D5;
   border: 1px solid grey;
   border-radius: 50px;
-
-  &__flex-wrapper-primary {
-    display: flex;
-    flex-direction: column;
-  }
 
   &__tittle {
     font-size: 1.8rem;
@@ -32,14 +30,22 @@
     margin-bottom: 5%;
   }
 
-  &__select-form {
+  :host ::ng-deep &__select-form {
     text-align: center;
+
+      .mdc-text-field {
+      border-radius: 20px;
+    }
   }
 
   &__selected-city {
+    font-size: 1.3rem;
   }
 
-  &__city-option {
-
+  &__select-button {
+    font-size: 1.3rem;
+    height: 60px;
+    border-radius: 20px;
   }
 }
+
