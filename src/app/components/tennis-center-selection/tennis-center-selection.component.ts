@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './tennis-center-selection.component.scss'
 })
 export class TennisCenterSelectionComponent {
+  currentCity:string = 'Almaty'
 
 }
