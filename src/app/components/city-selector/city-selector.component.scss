@@ -21,7 +21,7 @@
   max-width: 512px;
   padding: 3%;
   background-color: #D3D3D5;
-  border: 1px solid grey;
+  border: 1px solid #808080;
   border-radius: 50px;
 
   &__tittle {
@@ -30,10 +30,9 @@
     margin-bottom: 5%;
   }
 
-  :host ::ng-deep &__select-form {
+  :host::ng-deep &__select-form {
     text-align: center;
-
-      .mdc-text-field {
+    .mdc-text-field {
       border-radius: 20px;
     }
   }
@@ -46,6 +45,18 @@
     font-size: 1.3rem;
     height: 60px;
     border-radius: 20px;
+
+    &:hover {
+      background-color: #808080;
+    }
+
+    &:active {
+      color: #e8e8e8;
+      background-color: #4a4a4a;
+      border-color: #762598;
+    }
   }
 }
+
+
 

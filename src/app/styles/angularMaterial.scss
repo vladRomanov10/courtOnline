@@ -1,0 +1,10 @@
+//Стиль для выпадающего списка компонента city-selector.component
+.cdk-overlay-container {
+  .cdk-overlay-connected-position-bounding-box {
+    .cdk-overlay-pane {
+      .ng-trigger-transformPanel {
+        border-radius: 20px;
+      }
+    }
+  }
+}
